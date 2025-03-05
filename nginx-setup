@@ -22,4 +22,7 @@ sudo systemctl restart nginx
 ----------------------------
 sudo journalctl -u nginx --no-pager --lines=50
 
+----------
+sudo chown root:root /etc/nginx/sites-available/default
+sudo chmod 644 /etc/nginx/sites-available/default
 
