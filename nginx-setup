@@ -26,3 +26,12 @@ sudo journalctl -u nginx --no-pager --lines=50
 sudo chown root:root /etc/nginx/sites-available/default
 sudo chmod 644 /etc/nginx/sites-available/default
 
+------
+root@ubuntu:/home/ubuntu/portfolio/portfolio-backend/portfolio-app# ls
+app.py  Dockerfile  requirements.txt  static  templates
+root@ubuntu:/home/ubuntu/portfolio/portfolio-backend/portfolio-app# python3 app.py
+Traceback (most recent call last):
+  File "/home/ubuntu/portfolio/portfolio-backend/portfolio-app/app.py", line 1, in <module>
+    from flask import Flask, render_template
+ModuleNotFoundError: No module named 'flask'
+root@ubuntu:/home/ubuntu/portfolio/portfolio-backend/portfo
